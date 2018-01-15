@@ -121,5 +121,5 @@ function getPM25() {
     });
   });
 
-  timer = setInterval(getPM25, 60 * 30); // 每半小時抓取一次新資料
+  timer = setInterval(getPM25, 60 * 30 * 1000); // 每半小時抓取一次新資料
 }
