@@ -9,6 +9,7 @@ var bot = linebot({
 
 //這一段的程式是專門處理當有人傳送文字訊息給LineBot時，我們的處理回應
 bot.on('message', function(event) {
+  console.log('message come in with:' + event.message.type);
   if (event.message.type = 'text') {
     var msg = event.message.text;
   //收到文字訊息時，直接把收到的訊息傳回去
@@ -20,6 +21,7 @@ bot.on('message', function(event) {
       console.log('錯誤產生，錯誤碼：'+error);
     });
   }
+  console.log('message process end');
 });
 
 const app = express();
