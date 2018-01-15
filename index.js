@@ -1,6 +1,7 @@
 // Ming Code
 var linebot = require('linebot');
 var express = require('express');
+var HashMap = require('hashmap');
 
 var bot = linebot({
   channelId: '1556930043',
